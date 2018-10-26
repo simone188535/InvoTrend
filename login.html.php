@@ -10,7 +10,8 @@
                 margin: 0;
                 padding: 0;
                 font-family: sans-serif; 
-                background: url("cube_in_water_darker.jpg");
+                background-image: url("cube_in_water_darker.jpg");
+                background-repeat: no-repeat;
 /*                background: black; */
                 background-size: cover;
             }
@@ -99,8 +100,9 @@
                 margin-top: 120px;
                 font-size: 100px;
                 font-family: sans-serif;
-                color: #fddee4;
+                color: white;
                 /* border: 2px solid white; */
+                letter-spacing: 10px;
             }
 
             /* ALL THE CODE FOR THE FORM HERE: */
@@ -116,7 +118,7 @@
                 transform: translate(-50%, -50%);
                 padding: 8px;
                 color:white;
-                margin: 90px 0;
+                margin: 20% 0;
             }
             #form h1{
                 float: left;
@@ -178,6 +180,11 @@
                 background-color: black;
             }
             
+            #box{
+                position: relative;
+                
+            }
+            
 /*
             @media only screen and (min-width: 670px){
                 nav .logo{
@@ -200,7 +207,7 @@
                 }
                 
                 #banner{
-                    font-size 30px;
+                    font-size: 30px;
                     color: red;
                 }
             }
@@ -227,6 +234,7 @@
             <div id='banner'>
                 <label for='banner'>INVOTREND</label>
             </div>
+                <div id = "box">
             <div id='form'>
                 <h1>Login</h1>
                 <form action='test.php' method='POST'>
@@ -242,6 +250,7 @@
                     <input id='btn' type='submit' value="Sign in">
                     <input id='btn' type='submit' value="Sign Up">
                 </form>
+                    </div>
             </div>
         </div>
     </body>
