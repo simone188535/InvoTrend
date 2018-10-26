@@ -9,8 +9,9 @@
             body{
                 margin: 0;
                 padding: 0;
-                font-family: sans-serif;
-                background: url("../img/cube_in_water_darker.jpg") no-repeat;
+                font-family: sans-serif; 
+                background: url("cube_in_water_darker.jpg");
+/*                background: black; */
                 background-size: cover;
             }
             /* ALL THE CODE FOR THE NAV BAR HERE */
@@ -36,8 +37,9 @@
                 padding: 22px 20px;
                 height: 80px;
                 float: left;
-                font-size: 200px;
+                font-size: 100px;
                 transition: all 0.5s ease;
+                color: white;
             }
 
             nav .logo:hover{
@@ -96,7 +98,7 @@
                 text-align: center;
                 margin-top: 120px;
                 font-size: 100px;
-                font-family:sans-serif;
+                font-family: sans-serif;
                 color: #fddee4;
                 /* border: 2px solid white; */
             }
@@ -104,7 +106,9 @@
             /* ALL THE CODE FOR THE FORM HERE: */
 
             #form{
-                /* border: 4px solid ; */
+/*                 border: 4px solid ; */
+                border-radius: 20px;
+                background: #2d2b2bc7;
                 width: 280px;
                 position: absolute;
                 top: 50%;
@@ -112,13 +116,17 @@
                 transform: translate(-50%, -50%);
                 padding: 8px;
                 color:white;
+                margin: 90px 0;
             }
             #form h1{
                 float: left;
                 font-size: 40px;
                 border-bottom: 4px solid #009688;
                 margin-bottom: 50px;
+                margin-top: 50px;
                 padding: 13px 0;
+                margin-left: 80px;
+                
             }
             #textbox{
                 width: 100%;
@@ -169,6 +177,34 @@
                 text-align: center;
                 background-color: black;
             }
+            
+/*
+            @media only screen and (min-width: 670px){
+                nav .logo{
+                    width: 50%;
+                    position: relative;
+                }
+            }
+*/
+            
+            @media only screen and (max-width: 768px)
+            {
+                nav .logo{
+                    font-size: 20px;
+                    position: relative;
+                    color: green;
+                }
+                
+                nav .logo:hover{
+                    font-size: 50px;
+                }
+                
+                #banner{
+                    font-size 30px;
+                    color: red;
+                }
+            }
+
 
         </style>
         
@@ -180,11 +216,11 @@
                 <nav>
                     <div class="logo"><i class="fab fa-drupal"></i></div>
                     <ul>
-                        <!-- <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li> -->
-                        <!-- <li><a id='active' href="#">Log in</a></li> -->
+                        <li><a href="#">Contact</a></li> 
+                        <li><a id='active' href="#">Log in</a></li> 
                     </ul>
                 </nav>
             </div>
@@ -202,24 +238,7 @@
                         <i class="fas fa-lock"></i>
                         <input type='password' name='password' placeholder="Password" id='password'>
                     </div>
-                    <!-- <br>
-                    <label for='age'>Age:</label>
-                    <br>
-                    <input type='text' name='age' id='age'>
-                    <br>
-                    <label for='address'>address:</label>
-                    <br>
-                    <input type='text' name='address' id='address'>
-                    <br>
-                    <label for='gender'>Gender:</label>
-                    <select name="gender">
-                        <option value="M">male</option>
-                        <option value="F">female</option>
-                        <option value="other">other</option>
-                        <option value="Do not want to say">Do not want to say</option>
-                    </select>
-                    <br><br>
-                     -->
+                    
                     <input id='btn' type='submit' value="Sign in">
                     <input id='btn' type='submit' value="Sign Up">
                 </form>
